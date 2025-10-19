@@ -1,0 +1,131 @@
+{
+  "pharmacy": {
+    "name": "Pharmacy First",
+    "address": {
+      "street": "31 Bridge Street",
+      "city": "Loughborough",
+      "postcode": "LE11 1NH"
+    },
+    "contact": {
+      "phone": "01509262821",
+      "email": "pharmacy.fak57@nhs.net"
+    },
+    "hours": {
+      "monday_friday": "9:00 AM - 6:45 PM",
+      "saturday": "9:00 AM - 1:00 PM",
+      "sunday": "Closed"
+    }
+  },
+  "hero": {
+    "title": "Your Trusted Local Pharmacy",
+    "subtitle": "Providing exceptional healthcare services to the Loughborough community",
+    "cta": {
+      "text": "Contact Us Today",
+      "action": "contact"
+    }
+  },
+  "services": [
+    {
+      "id": "pharmacy-first",
+      "title": "Pharmacy First Service",
+      "description": "Get treatment for common conditions without visiting your GP",
+      "icon": "💊",
+      "features": [
+        "No appointment needed",
+        "Quick consultations",
+        "Expert pharmacist advice",
+        "NHS funded service"
+      ]
+    },
+    {
+      "id": "prescriptions",
+      "title": "Prescription Services",
+      "description": "Collect your NHS and private prescriptions with ease",
+      "icon": "📋",
+      "features": [
+        "Quick collection",
+        "Prescription management",
+        "Delivery available",
+        "Repeat prescription service"
+      ]
+    },
+    {
+      "id": "health-advice",
+      "title": "Health Advice & Consultations",
+      "description": "Professional health advice from qualified pharmacists",
+      "icon": "🩺",
+      "features": [
+        "Free consultations",
+        "Medication reviews",
+        "Health screenings",
+        "Travel advice"
+      ]
+    },
+    {
+      "id": "wellness",
+      "title": "Wellness Products",
+      "description": "Wide range of health and wellness products",
+      "icon": "🌿",
+      "features": [
+        "Vitamins & supplements",
+        "First aid supplies",
+        "Personal care items",
+        "Baby care products"
+      ]
+    }
+  ],
+  "callToActions": [
+    {
+      "title": "Need Immediate Help?",
+      "description": "Call us now for urgent pharmacy services",
+      "buttonText": "Call Now",
+      "buttonAction": "tel:01509262821",
+      "type": "urgent"
+    },
+    {
+      "title": "Book a Consultation",
+      "description": "Schedule a private consultation with our pharmacist",
+      "buttonText": "Book Now",
+      "buttonAction": "contact",
+      "type": "primary"
+    }
+  ],
+  "about": {
+    "title": "About Pharmacy First",
+    "description": "Located in the heart of Loughborough, Pharmacy First is your trusted local pharmacy committed to providing exceptional healthcare services to our community. Our qualified pharmacists are here to help with all your health and wellness needs.",
+    "mission": "To provide accessible, professional, and caring pharmacy services that improve the health and wellbeing of our local community."
+  },
+  "testimonials": [
+    {
+      "text": "Excellent service and very helpful staff. Always willing to go the extra mile.",
+      "author": "Local Customer"
+    },
+    {
+      "text": "Quick and efficient service. The pharmacist is very knowledgeable and friendly.",
+      "author": "Regular Customer"
+    },
+    {
+      "text": "Great pharmacy with professional staff. Highly recommend for all your health needs.",
+      "author": "Community Member"
+    }
+  ],
+  "footer": {
+    "quickLinks": [
+      { "text": "Services", "link": "#services" },
+      { "text": "About Us", "link": "#about" },
+      { "text": "Contact", "link": "#contact" },
+      { "text": "Opening Hours", "link": "#hours" }
+    ],
+    "services": [
+      { "text": "Pharmacy First", "link": "#pharmacy-first" },
+      { "text": "Prescriptions", "link": "#prescriptions" },
+      { "text": "Health Advice", "link": "#health-advice" },
+      { "text": "Wellness Products", "link": "#wellness" }
+    ],
+    "legalLinks": [
+      { "text": "Privacy Policy", "link": "/privacy" },
+      { "text": "Terms of Service", "link": "/terms" },
+      { "text": "Complaints Procedure", "link": "/complaints" }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy First - Your Trusted Local Pharmacy in Loughborough</title>
+  <meta name="description" content="Pharmacy First in Loughborough provides professional pharmacy services including NHS Pharmacy First, prescription collection, health consultations, and wellness products. Visit us at 31 Bridge Street.">
+  <meta name="keywords" content="pharmacy, Loughborough, NHS, prescriptions, health advice, Pharmacy First, Bridge Street, LE11 1NH">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pharmacy-first-loughborough.com/">
+  <meta property="og:title" content="Pharmacy First - Your Trusted Local Pharmacy in Loughborough">
+  <meta property="og:description" content="Professional pharmacy services in the heart of Loughborough. NHS services, prescriptions, health advice and more.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pharmacy-first-loughborough.com/">
+  <meta property="twitter:title" content="Pharmacy First - Your Trusted Local Pharmacy in Loughborough">
+  <meta property="twitter:description" content="Professional pharmacy services in the heart of Loughborough. NHS services, prescriptions, health advice and more.">
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Pharmacy",
+    "name": "Pharmacy First",
+    "description": "Professional pharmacy services in Loughborough",
+    "url": "https://pharmacy-first-loughborough.com",
+    "telephone": "01509262821",
+    "email": "pharmacy.fak57@nhs.net",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "31 Bridge Street",
+      "addressLocality": "Loughborough",
+      "postalCode": "LE11 1NH",
+      "addressCountry": "GB"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:45"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "priceRange": "$$",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Pharmacy Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "NHS Pharmacy First Service"
+          }
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Prescription Services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service", 
+            "name": "Health Consultations"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Google Fonts - Maven Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body class="antialiased">
+  <pharmacy-app></pharmacy-app>
+  <script type="module" src="/src/app.js"></script>
+</body>
+</html>
