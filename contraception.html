@@ -1,22 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pharmacy Contraception Service - Daventry Pharma</title>
-  <meta name="description" content="Access NHS funded contraception services at Daventry Pharma. Get ongoing contraceptive supplies and new contraceptive consultations from qualified pharmacists.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script type="module" src="./src/app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraception Service - Pharmacy First Daventry</title>
+    <meta name="description" content="Access NHS funded contraception services at Daventry Pharma. Get ongoing contraceptive supplies and new contraceptive consultations from qualified pharmacists.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="./src/pages/services/contraception.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8fafc;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
 </head>
-<body class="min-h-screen bg-gray-50">
-  <pharmacy-header></pharmacy-header>
-  
-  <main>
+<body>
+    <!-- Navigation -->
+    <nav style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h1 style="color: white; font-size: 1.5rem; font-weight: 700; margin: 0;">
+                        <a href="./index.html" style="text-decoration: none; color: white;">
+                            🏥 Daventry Pharma
+                        </a>
+                    </h1>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem; margin: 0;">Pharmacy First Services</p>
+                </div>
+                <div>
+                    <a href="./services.html" style="color: white; text-decoration: none; padding: 0.5rem 1rem; background: rgba(255,255,255,0.2); border-radius: 25px; font-size: 0.9rem; transition: all 0.2s;">
+                        ← Back to Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Content -->
     <contraception-service></contraception-service>
-  </main>
-  
-  <pharmacy-footer></pharmacy-footer>
+
+    <!-- Footer -->
+    <footer style="background: #2d3748; color: white; padding: 3rem 0 2rem; margin-top: 4rem;">
+        <div class="container">
+            <div style="text-align: center;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">🏥 Daventry Pharma</h3>
+                <p style="color: #a0aec0; margin-bottom: 2rem;">Your trusted community pharmacy</p>
+                
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                    <div>
+                        <strong>📍 Address:</strong><br>
+                        <span style="color: #a0aec0;">123 High Street<br>Daventry, NN11 4AB</span>
+                    </div>
+                    <div>
+                        <strong>📞 Phone:</strong><br>
+                        <a href="tel:01327123456" style="color: #63b3ed; text-decoration: none;">01327 123456</a>
+                    </div>
+                    <div>
+                        <strong>🕒 Hours:</strong><br>
+                        <span style="color: #a0aec0;">Mon-Fri: 9AM-6PM<br>Sat: 9AM-1PM</span>
+                    </div>
+                </div>
+                
+                <div style="border-top: 1px solid #4a5568; padding-top: 2rem; color: #a0aec0;">
+                    <p>&copy; 2024 Daventry Pharma. All rights reserved. | NHS Pharmacy First Service Provider</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
