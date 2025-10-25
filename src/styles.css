@@ -148,6 +148,27 @@
 
   /* Urgent/Emergency styling for Emergency Contraception */
   .service-urgent-badge {
-    @apply bg-red-500 bg-opacity-20 text-white px-4 py-2 rounded-full border-2 border-red-500 border-opacity-30;
+    @apply bg-red-500 bg-opacity-20 text-red-700 px-4 py-2 rounded-full border-2 border-red-500 border-opacity-50 font-semibold;
+  }
+
+  .service-urgent-badge:hover {
+    @apply bg-red-500 bg-opacity-30 border-opacity-70;
+  }
+
+  /* Medication grid for Emergency Contraception */
+  .medication-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 my-6;
+  }
+
+  .medication-card {
+    @apply bg-blue-50 p-4 rounded-lg border border-blue-200;
+  }
+
+  .medication-name {
+    @apply text-lg font-semibold text-blue-800 mb-2;
+  }
+
+  .time-limit {
+    @apply inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium mt-2;
   }
 }

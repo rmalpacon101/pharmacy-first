@@ -21,27 +21,25 @@ export class EmergencyContraceptionService extends LitElement {
           <h2 class="service-section-title">How does the Emergency Hormonal Contraception service work?</h2>
           <div class="service-section-content">
             <p>If you feel as though there may be a chance you could fall pregnant after having unprotected/failed protected sex, it is important for you speak to a pharmacist as soon as possible - if you wish to eliminate any risk of pregnancy.</p>
-          </div>
-
-          <div class="service-info-box">
-            <p><strong>⏰ Critical Time Limits:</strong> The reason for urgency is based upon the time limit of when emergency contraception must be taken:</p>
-          </div>
-
-          <div class="medication-grid">
-            <div class="medication-card">
-              <div class="medication-name">💊 Levonelle</div>
-              <p>Emergency contraceptive pill that must be taken within 3 days (72 hours) of unprotected sex.</p>
-              <span class="time-limit">Within 3 days</span>
+            
+            <div class="service-info-box">
+              <p><strong>⏰ Critical Time Limits:</strong> The reason for urgency is based upon the time limit of when emergency contraception must be taken:</p>
             </div>
 
-            <div class="medication-card">
-              <div class="medication-name">💊 ellaOne</div>
-              <p>Emergency contraceptive pill that can be taken up to 5 days (120 hours) after unprotected sex.</p>
-              <span class="time-limit">Within 5 days</span>
-            </div>
-          </div>
+            <div class="medication-grid">
+              <div class="medication-card">
+                <div class="medication-name">💊 Levonelle</div>
+                <p>Emergency contraceptive pill that must be taken within 3 days (72 hours) of unprotected sex.</p>
+                <span class="time-limit">Within 3 days</span>
+              </div>
 
-          <div class="service-section-content">
+              <div class="medication-card">
+                <div class="medication-name">💊 ellaOne</div>
+                <p>Emergency contraceptive pill that can be taken up to 5 days (120 hours) after unprotected sex.</p>
+                <span class="time-limit">Within 5 days</span>
+              </div>
+            </div>
+
             <p>This service includes a private consultation where you, the patient, may be signposted to an alternate service provider such as a GP or sexual health clinic that can potentially provide you with other emergency contraception like the intrauterine device.</p>
           </div>
         </section>

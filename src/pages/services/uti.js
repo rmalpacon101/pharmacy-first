@@ -123,7 +123,7 @@ export class UtiService extends LitElement {
           <div class="age-requirement">
             <strong>Age requirement:</strong> This service is available for women aged 16-64 years
           </div>
-        </section>
+        </div>
 
         <section class="service-content-section">
           <h2 class="service-section-title">Where do I go for help?</h2>

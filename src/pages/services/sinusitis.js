@@ -85,7 +85,7 @@ export class SinusitisService extends LitElement {
           <div class="age-requirement">
             <strong>Age requirement:</strong> This service is available for individuals aged 12 years and above
           </div>
-        </section>
+        </div>
 
         <section class="service-content-section">
           <h2 class="service-section-title">Available treatments</h2>
