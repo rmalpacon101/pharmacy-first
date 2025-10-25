@@ -27,19 +27,12 @@
     <link rel="stylesheet" href="/src/styles.css">
 </head>
 <body class="antialiased">
-    <!-- Use consistent header -->
-    <pharmacy-header></pharmacy-header>
-    
     <!-- Services Page Header -->
-    <div class="bg-primary-600 text-white py-12">
-        <div class="container-max section-padding text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Pharmacy First Services</h1>
-            <p class="text-xl text-primary-100 max-w-3xl mx-auto">
-                Professional treatment for common conditions without visiting your GP. 
-                All services are free on the NHS and no appointment is needed.
-            </p>
-        </div>
-    </div>
+    <service-page-header 
+        service-title="Pharmacy First Services"
+        service-subtitle="Professional treatment for common conditions without visiting your GP. All services are free on the NHS and no appointment is needed."
+        hide-back-button>
+    </service-page-header>
     
     <!-- Services Content -->
     <main class="bg-gray-50 py-16">
@@ -143,7 +136,7 @@
     <pharmacy-footer></pharmacy-footer>
 
     <script type="module">
-        import '/src/components/pharmacy-header.js';
+        import '/src/components/service-page-header.js';
         import '/src/components/pharmacy-footer.js';
     </script>
 </body>

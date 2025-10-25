@@ -7,7 +7,8 @@ export class ServicePageHeader extends LitElement {
         return {
             serviceName: { type: String, attribute: 'service-name' },
             serviceTitle: { type: String, attribute: 'service-title' },
-            serviceSubtitle: { type: String, attribute: 'service-subtitle' }
+            serviceSubtitle: { type: String, attribute: 'service-subtitle' },
+            hideBackButton: { type: Boolean, attribute: 'hide-back-button' }
         };
     }
 
@@ -46,11 +47,13 @@ export class ServicePageHeader extends LitElement {
                     <div class="${badgeClasses}">
                         ${badgeContent}
                     </div>
-                    <div class="mt-8">
-                        <a href="./services.html" class="btn-outline">
-                            ← Back to Services
-                        </a>
-                    </div>
+                    ${!this.hideBackButton ? html`
+                        <div class="mt-8">
+                            <a href="./services.html" class="btn-outline">
+                                ← Back to Services
+                            </a>
+                        </div>
+                    ` : ''}
                 </div>
             </div>
         `;
