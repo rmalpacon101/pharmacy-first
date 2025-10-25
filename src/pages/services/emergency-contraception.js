@@ -89,7 +89,7 @@ export class EmergencyContraceptionService extends LitElement {
           <div class="service-section-content">
             <p>You can find a pharmacy that provides this service by entering your postcode. This will give you a list of nearby pharmacies with their addresses and opening hours.</p>
             <p>You can also contact your local pharmacy for any queries or information regarding our Emergency Hormonal Contraception service and more.</p>
-            <a href="#contact" class="service-cta-button service-urgent-badge">Find Your Nearest Pharmacy - Urgent</a>
+            <a href="/#contact" class="service-cta-button service-urgent-badge">Find Your Nearest Pharmacy - Urgent</a>
           </div>
         </section>
 
