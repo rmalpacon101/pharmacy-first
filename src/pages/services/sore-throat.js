@@ -120,7 +120,7 @@ export class SoreThroatService extends LitElement {
           <h2 class="service-section-title">Where do I go for help?</h2>
           <div class="service-section-content">
             <p>Wherever you are, whether it be at home or the park, you can easily find your nearest pharmacy on our website by typing in your postcode. Once you have entered in your location, our map will zoom in and show our nearest pharmacies to you. There is no need to worry about booking an appointment or giving us a heads up before your visit, as with Pharmacy First, our pharmacists will be ready to assist you.</p>
-            <a href="/#contact" class="service-cta-button">Find Your Nearest Pharmacy</a>
+            <a href="/#contact" class="service-cta-button">Contact us</a>
           </div>
         </section>
 

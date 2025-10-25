@@ -94,7 +94,7 @@ export class ContraceptionService extends LitElement {
           <div class="service-section-content">
             <p>You can find a pharmacy that provides this service by entering your postcode. This will give you a list of nearby pharmacies with their addresses and opening hours.</p>
             <p>You can also contact your local pharmacy for any queries or information regarding our Pharmacy Contraception service and more.</p>
-            <a href="/#contact" class="service-cta-button">Find Your Nearest Pharmacy</a>
+            <a href="/#contact" class="service-cta-button">Contact us</a>
           </div>
         </section>
 

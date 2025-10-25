@@ -1,17 +1,8 @@
-# Robots.txt - Development/Test Site
-# Block all search engine indexing
+# Robots.txt - Production Site
+# Allow all search engine indexing
 
 User-agent: *
-Disallow: /
+Allow: /
 
-# Block specific bots
-User-agent: Googlebot
-Disallow: /
-
-User-agent: Bingbot
-Disallow: /
-
-User-agent: Slurp
-Disallow: /
-
-# No sitemap provided for dev/test site
+# Sitemap location
+Sitemap: https://www.pharmacyfirstloughborough.co.uk/sitemap.xml
