@@ -7,26 +7,6 @@ export class EmergencyContraceptionService extends LitElement {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
-    .service-header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 4rem 2rem 2rem;
-      text-align: center;
-    }
-
-    .service-title {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .service-subtitle {
-      font-size: 1.25rem;
-      opacity: 0.9;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
     .urgent-badge {
       display: inline-flex;
       align-items: center;
@@ -199,16 +179,6 @@ export class EmergencyContraceptionService extends LitElement {
 
   render() {
     return html`
-      <div class="service-header">
-        <div class="container">
-          <h1 class="service-title">Emergency Hormonal Contraception</h1>
-          <p class="service-subtitle">Urgent contraceptive service to reduce the risk of unwanted pregnancy</p>
-          <div class="urgent-badge">
-            🚨 Time-Sensitive Service - Act Quickly
-          </div>
-        </div>
-      </div>
-
       <div class="container">
         <section class="content-section">
           <h2 class="section-title">What is the Emergency Hormonal Contraception service?</h2>

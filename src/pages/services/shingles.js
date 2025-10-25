@@ -7,36 +7,6 @@ export class ShinglesService extends LitElement {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
-    .service-header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 4rem 2rem 2rem;
-      text-align: center;
-    }
-
-    .service-title {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .service-subtitle {
-      font-size: 1.25rem;
-      opacity: 0.9;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .free-service-badge {
-      display: inline-flex;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.2);
-      padding: 0.5rem 1rem;
-      border-radius: 25px;
-      margin-top: 1rem;
-      font-weight: 600;
-    }
-
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -172,16 +142,6 @@ export class ShinglesService extends LitElement {
 
   render() {
     return html`
-      <div class="service-header">
-        <div class="container">
-          <h1 class="service-title">Shingles</h1>
-          <p class="service-subtitle">Professional treatment for herpes zoster (shingles) through Pharmacy First</p>
-          <div class="free-service-badge">
-            🆓 Free NHS Service
-          </div>
-        </div>
-      </div>
-
       <div class="container">
         <section class="content-section">
           <div class="section-content">
