@@ -33,21 +33,21 @@ export class ServicePageHeader extends LitElement {
         const badgeContent = isEmergencyContraception 
             ? '🚨 Time-Sensitive Service - Act Quickly'
             : '🆓 Free NHS Service';
-        const badgeStyle = isEmergencyContraception
-            ? 'display: inline-flex; align-items: center; background: rgba(239, 68, 68, 0.2); color: #ffffff; padding: 0.5rem 1rem; border-radius: 25px; margin-top: 1rem; font-weight: 600; border: 2px solid rgba(239, 68, 68, 0.3);'
-            : 'display: inline-flex; align-items: center; background: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 25px; margin-top: 1rem; font-weight: 600;';
+        const badgeClasses = isEmergencyContraception
+            ? 'inline-flex items-center bg-red-500 bg-opacity-20 text-white px-4 py-2 rounded-full mt-4 font-semibold border-2 border-red-500 border-opacity-30'
+            : 'inline-flex items-center bg-white bg-opacity-20 text-white px-4 py-2 rounded-full mt-4 font-semibold';
         
         return html`
             <pharmacy-header></pharmacy-header>
-            <div class="service-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4rem 2rem 2rem; text-align: center;">
-                <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
-                    <h1 class="service-title" style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">${this.serviceTitle || 'Service'}</h1>
-                    <p class="service-subtitle" style="font-size: 1.25rem; opacity: 0.9; max-width: 600px; margin: 0 auto 1rem;">${this.serviceSubtitle || 'NHS Pharmacy First Service'}</p>
-                    <div class="service-badge" style="${badgeStyle}">
+            <div class="bg-primary-600 text-white py-16 text-center">
+                <div class="container-max section-padding">
+                    <h1 class="text-5xl font-bold mb-4">${this.serviceTitle || 'Service'}</h1>
+                    <p class="text-xl text-primary-100 max-w-2xl mx-auto mb-4">${this.serviceSubtitle || 'NHS Pharmacy First Service'}</p>
+                    <div class="${badgeClasses}">
                         ${badgeContent}
                     </div>
-                    <div style="margin-top: 2rem;">
-                        <a href="./services.html" class="btn-outline" style="display: inline-block; color: white; border: 2px solid white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s;">
+                    <div class="mt-8">
+                        <a href="./services.html" class="btn-outline">
                             ← Back to Services
                         </a>
                     </div>
