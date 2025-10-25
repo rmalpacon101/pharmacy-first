@@ -20,45 +20,47 @@ export class InfectedInsectBitesService extends LitElement {
           <h2 class="service-section-title">What does an infected insect bite look like?</h2>
           <div class="service-section-content">
             <p>Each bite from an insect will look different. Some will look worse than others, and some can cause serious health implications, so it is important to understand what each insect bite looks like. No matter the insect your bite is from, if the bite starts to swell and feel painful it is likely it has become infected.</p>
-          </div>
 
-          <div class="bite-types">
-            <div class="bite-type-card">
-              <div class="bite-type-title">🐝 Bees, hornets, and wasps</div>
-              <p>A sting from either a bee, hornet or wasp will look like a small mark where the stinger has entered the skin. In some cases, the stinger can get stuck, so it is crucial you never pull it as you could potentially squeeze out the poison instead. Rather, brush the stinger sideways with your fingernail or with a bank card and wash the area with soapy water.</p>
-            </div>
-
-            <div class="bite-type-card">
-              <div class="bite-type-title">🦟 Mosquito</div>
-              <p>A mosquito bite typically appears as a small spot, causing the skin to raise. In addition, this spot will also become irritably itchy.</p>
-            </div>
-
-            <div class="bite-type-card">
-              <div class="bite-type-title">🕷️ Tick</div>
-              <p>When you are bitten by a tick, the insect will still be attached to your skin. Therefore, you must use fine-tipped tweezers to carefully grab the tick as close to the skin and pull it upwards. Once you have gently removed the tick, dispose of it, and clean the bite with antiseptic or soapy water.</p>
-              <div class="warning-box">
-                <strong>Warning:</strong> If your skin starts to show a rash that looks like a bullseye, it is likely you have caught Lyme disease, which can be caused by a tick bite. For this, visit your local pharmacy for treatment and advice.
+            <div class="service-info-box">
+              <h3>Types of insect bites and their appearance:</h3>
+              
+              <div class="cause-item">
+                <h4 class="cause-title">🐝 Bees, hornets, and wasps</h4>
+                <p class="cause-description">A sting from either a bee, hornet or wasp will look like a small mark where the stinger has entered the skin. In some cases, the stinger can get stuck, so it is crucial you never pull it as you could potentially squeeze out the poison instead. Rather, brush the stinger sideways with your fingernail or with a bank card and wash the area with soapy water.</p>
               </div>
-            </div>
 
-            <div class="bite-type-card">
-              <div class="bite-type-title">🪰 Horsefly</div>
-              <p>Horsefly bites are uncomfortable and look unpleasant. These bites are large, painful and can sometimes bleed. Quite often a horsefly bite can be infected, so it is important to treat this bite as soon as possible.</p>
-            </div>
+              <div class="cause-item">
+                <h4 class="cause-title">🦟 Mosquito</h4>
+                <p class="cause-description">A mosquito bite typically appears as a small spot, causing the skin to raise. In addition, this spot will also become irritably itchy.</p>
+              </div>
 
-            <div class="bite-type-card">
-              <div class="bite-type-title">🪰 Midge</div>
-              <p>Midge bites show up as small marks that cause the skin to raise in a form of clusters.</p>
-            </div>
+              <div class="cause-item">
+                <h4 class="cause-title">🕷️ Tick</h4>
+                <p class="cause-description">When you are bitten by a tick, the insect will still be attached to your skin. Therefore, you must use fine-tipped tweezers to carefully grab the tick as close to the skin and pull it upwards. Once you have gently removed the tick, dispose of it, and clean the bite with antiseptic or soapy water.</p>
+                <div class="service-warning-note">
+                  <p><strong>Warning:</strong> If your skin starts to show a rash that looks like a bullseye, it is likely you have caught Lyme disease, which can be caused by a tick bite. For this, visit your local pharmacy for treatment and advice.</p>
+                </div>
+              </div>
 
-            <div class="bite-type-card">
-              <div class="bite-type-title">🕷️ Mite</div>
-              <p>When bitten by a mite, itchy lumps will appear on the skin. Sometimes these lumps can develop into sore blisters.</p>
-            </div>
+              <div class="cause-item">
+                <h4 class="cause-title">🪰 Horsefly</h4>
+                <p class="cause-description">Horsefly bites are uncomfortable and look unpleasant. These bites are large, painful and can sometimes bleed. Quite often a horsefly bite can be infected, so it is important to treat this bite as soon as possible.</p>
+              </div>
 
-            <div class="bite-type-card">
-              <div class="bite-type-title">🪲 Fleas</div>
-              <p>Unlike any other bites, a flea bite will be found in groups below the knees. These will appear as red marks and can feel lumpy.</p>
+              <div class="cause-item">
+                <h4 class="cause-title">🪰 Midge</h4>
+                <p class="cause-description">Midge bites show up as small marks that cause the skin to raise in a form of clusters.</p>
+              </div>
+
+              <div class="cause-item">
+                <h4 class="cause-title">🕷️ Mite</h4>
+                <p class="cause-description">When bitten by a mite, itchy lumps will appear on the skin. Sometimes these lumps can develop into sore blisters.</p>
+              </div>
+
+              <div class="cause-item">
+                <h4 class="cause-title">🪲 Fleas</h4>
+                <p class="cause-description">Unlike any other bites, a flea bite will be found in groups below the knees. These will appear as red marks and can feel lumpy.</p>
+              </div>
             </div>
           </div>
         </section>

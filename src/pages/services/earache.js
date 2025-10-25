@@ -39,17 +39,35 @@ export class EaracheService extends LitElement {
           <h2 class="service-section-title">Why do I have earache?</h2>
           <div class="service-section-content">
             <p>By now, you must be wondering what causes earache, or at least why does it occur? So, here is a list of five causes that often bring about earache:</p>
-          </div>
 
-          <div class="service-info-box">
-            <h3>Common causes of earache:</h3>
-            <ul class="service-list service-causes-list">
-              <li><strong>Ear infection:</strong> Outer ear infection (otherwise known as otitis externa) can cause extreme pain to the ear along with itchiness or irritation around the ear canal. This results in redness and swelling as well as pressure inside your ear.</li>
-              <li><strong>Earwax build-up:</strong> Usually, earwax tends to fall out on its own however, if you start to experience hearing loss, a sensation of your ears feeling blocked, dizziness, sickness or a ringing and pain in your ear, you must speak to a pharmacist for advice.</li>
-              <li><strong>Toothache:</strong> When you experience toothache, it is likely you will also experience earache. This occurs because the pain from the tooth tends to radiate to surrounding areas like the ear, potentially triggering infections.</li>
-              <li><strong>Flu:</strong> Adults tend to experience a variety of symptoms when they have the flu like headaches, a high temperature and a dry cough. But in younger children, earache as well as low energy tends to be a symptom of the flu.</li>
-              <li><strong>Eustachian tube dysfunction:</strong> When the mucosal lining of the eustachian tube is swollen or unable to open and close properly, this can cause extreme pain to the ear. Unfortunately, this mostly affects young children, as their eustachian tubes are smaller therefore, it is harder for them to drain fluid out of their ear.</li>
-            </ul>
+            <div class="service-info-box">
+              <h3>Common causes of earache:</h3>
+              
+              <div class="cause-item">
+                <h4 class="cause-title">🦠 Ear infection</h4>
+                <p class="cause-description">Outer ear infection (otherwise known as otitis externa) can cause extreme pain to the ear along with itchiness or irritation around the ear canal. This results in redness and swelling as well as pressure inside your ear.</p>
+              </div>
+
+              <div class="cause-item">
+                <h4 class="cause-title">🧽 Earwax build-up</h4>
+                <p class="cause-description">Usually, earwax tends to fall out on its own however, if you start to experience hearing loss, a sensation of your ears feeling blocked, dizziness, sickness or a ringing and pain in your ear, you must speak to a pharmacist for advice.</p>
+              </div>
+
+              <div class="cause-item">
+                <h4 class="cause-title">🦷 Toothache</h4>
+                <p class="cause-description">When you experience toothache, it is likely you will also experience earache. This occurs because the pain from the tooth tends to radiate to surrounding areas like the ear, potentially triggering infections.</p>
+              </div>
+
+              <div class="cause-item">
+                <h4 class="cause-title">🤒 Flu</h4>
+                <p class="cause-description">Adults tend to experience a variety of symptoms when they have the flu like headaches, a high temperature and a dry cough. But in younger children, earache as well as low energy tends to be a symptom of the flu.</p>
+              </div>
+
+              <div class="cause-item">
+                <h4 class="cause-title">👂 Eustachian tube dysfunction</h4>
+                <p class="cause-description">When the mucosal lining of the eustachian tube is swollen or unable to open and close properly, this can cause extreme pain to the ear. Unfortunately, this mostly affects young children, as their eustachian tubes are smaller therefore, it is harder for them to drain fluid out of their ear.</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -57,14 +75,14 @@ export class EaracheService extends LitElement {
           <h2 class="service-section-title">When does earache stop?</h2>
           <div class="service-section-content">
             <p>The time it takes for earache to improve, entirely depends on its cause, but usually this tends to be within a few days. However, here are a couple of at-home remedies you can do to quicken ear pain relief:</p>
-          </div>
 
-          <div class="service-info-box">
-            <h3>At-home remedies:</h3>
-            <ul class="service-list service-treatment-list">
-              <li>Painkillers (paracetamol and ibuprofen)</li>
-              <li>A warm or cold flannel on the ear</li>
-            </ul>
+            <div class="service-info-box">
+              <h3>At-home remedies:</h3>
+              <ul class="service-list service-treatment-list">
+                <li>Painkillers (paracetamol and ibuprofen)</li>
+                <li>A warm or cold flannel on the ear</li>
+              </ul>
+            </div>
           </div>
         </section>
 

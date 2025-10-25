@@ -19,15 +19,25 @@ export class ShinglesService extends LitElement {
           <h2 class="service-section-title">What is shingles?</h2>
           <div class="service-section-content">
             <p>Shingles is a red rash that typically appears on one side of the body. As this infection worsens, it is important to recognise what each stage of shingles looks like:</p>
-          </div>
-          
-          <div class="stages-list">
-            <h3>Stages of shingles:</h3>
-            <ul class="service-list service-symptoms-list">
-              <li><strong>Stage 1:</strong> The first stage of shingles is a tingling or painful sensation to the skin. Yet, sometimes this can start out as a headache or feeling unwell.</li>
-              <li><strong>Stage 2:</strong> In just a few days, a rash will appear on one side of the body and will often show up in a form of clusters. This is commonly found around the chest, tummy, eye, face, and genitals.</li>
-              <li><strong>Stage 3:</strong> Then, the rash will then turn into itchy blisters, full of liquid and ready to dry out and scab. This will happen just a few days after.</li>
-            </ul>
+            
+            <div class="service-info-box">
+              <h3>Stages of shingles:</h3>
+              
+              <div class="cause-item">
+                <h4 class="cause-title">🟡 Stage 1: Early symptoms</h4>
+                <p class="cause-description">The first stage of shingles is a tingling or painful sensation to the skin. Yet, sometimes this can start out as a headache or feeling unwell.</p>
+              </div>
+
+              <div class="cause-item">
+                <h4 class="cause-title">🔴 Stage 2: Rash appears</h4>
+                <p class="cause-description">In just a few days, a rash will appear on one side of the body and will often show up in a form of clusters. This is commonly found around the chest, tummy, eye, face, and genitals.</p>
+              </div>
+
+              <div class="cause-item">
+                <h4 class="cause-title">🟤 Stage 3: Blisters and scabs</h4>
+                <p class="cause-description">Then, the rash will then turn into itchy blisters, full of liquid and ready to dry out and scab. This will happen just a few days after.</p>
+              </div>
+            </div>
           </div>
         </section>
 
