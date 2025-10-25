@@ -116,10 +116,6 @@
       { "text": "Contact", "link": "/#contact" },
       { "text": "Opening Hours", "link": "/#hours" }
     ],
-    "legalLinks": [
-      { "text": "Privacy Policy", "link": "/privacy" },
-      { "text": "Terms of Service", "link": "/terms" },
-      { "text": "Complaints Procedure", "link": "/complaints" }
-    ]
+    "legalLinks": []
   }
 }

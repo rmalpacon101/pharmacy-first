@@ -123,6 +123,16 @@ export class PharmacyServices extends LitElement {
                   </div>
                 </div>
               </a>
+              
+              <a href="./impetigo.html" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow border-l-4 border-orange-500">
+                <div class="flex items-center">
+                  <span class="text-3xl mr-4">🔴</span>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Impetigo</h4>
+                    <p class="text-sm text-gray-600">Ages 1+ years</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
 

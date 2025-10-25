@@ -127,6 +127,7 @@ export class InfectedInsectBitesService extends LitElement {
       padding: 1.5rem;
       margin: 2rem 0;
       border-radius: 0 8px 8px 0;
+      color: #2d3748;
     }
 
     .warning-box {
