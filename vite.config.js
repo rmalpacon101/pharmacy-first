@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/pharmacy-first/', // Repository name matches GitHub repo
+  base: './', // Relative paths - works everywhere!
   server: {
     port: 3000,
     open: true
@@ -9,5 +9,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     target: 'es2020'
-  }
+  },
+  publicDir: 'public' // Copy public folder contents to dist
 })

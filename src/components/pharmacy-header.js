@@ -20,7 +20,7 @@ export class PharmacyHeader extends LitElement {
 
   async loadContent() {
     try {
-      const response = await fetch('/content.json');
+      const response = await fetch('./content.json');
       this.content = await response.json();
       this.requestUpdate(); // Trigger re-render after content loads
     } catch (error) {
