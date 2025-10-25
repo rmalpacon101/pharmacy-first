@@ -37,7 +37,7 @@
 
   /* Shared Service Content Styles */
   .service-container {
-    @apply w-full px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   .service-content-section {
