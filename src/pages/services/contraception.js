@@ -1,164 +1,17 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html } from 'lit';
 
 export class ContraceptionService extends LitElement {
-  static styles = css`
-    :host {
-      display: block;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    .content-section {
-      padding: 3rem 0;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #2d3748;
-      margin-bottom: 1.5rem;
-    }
-
-    .section-content {
-      font-size: 1.125rem;
-      line-height: 1.8;
-      color: #4a5568;
-      margin-bottom: 2rem;
-    }
-
-    .eligibility-list, .benefits-list, .help-list {
-      background: #f7fafc;
-      padding: 2rem;
-      border-radius: 12px;
-      margin: 2rem 0;
-    }
-
-    .eligibility-list ul, .benefits-list ul, .help-list ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .eligibility-list li, .benefits-list li, .help-list li {
-      padding: 0.75rem 0;
-      padding-left: 2rem;
-      position: relative;
-    }
-
-    .eligibility-list li::before {
-      content: "✅";
-      position: absolute;
-      left: 0;
-    }
-
-    .benefits-list li::before {
-      content: "💊";
-      position: absolute;
-      left: 0;
-    }
-
-    .help-list li::before {
-      content: "🤝";
-      position: absolute;
-      left: 0;
-    }
-
-    .pharmacy-first-info {
-      background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
-      color: white;
-      padding: 3rem 2rem;
-      border-radius: 12px;
-      margin: 3rem 0;
-      text-align: center;
-    }
-
-    .age-requirement {
-      background: #e6fffa;
-      border-left: 4px solid #38b2ac;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      border-radius: 0 8px 8px 0;
-      color: #2d3748;
-    }
-
-    .service-expansion {
-      background: #f0fff4;
-      border-left: 4px solid #48bb78;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      border-radius: 0 8px 8px 0;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 1rem;
-      transition: transform 0.2s;
-    }
-
-    .cta-button:hover {
-      transform: translateY(-2px);
-    }
-
-    .faq-section {
-      background: #f7fafc;
-      padding: 3rem 2rem;
-      border-radius: 12px;
-      margin: 3rem 0;
-    }
-
-    .faq-item {
-      margin-bottom: 2rem;
-    }
-
-    .faq-question {
-      font-weight: 600;
-      color: #2d3748;
-      margin-bottom: 0.5rem;
-    }
-
-    .faq-answer {
-      color: #4a5568;
-      line-height: 1.6;
-    }
-
-    .contraceptive-types {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin: 2rem 0;
-    }
-
-    .contraceptive-card {
-      background: #f7fafc;
-      padding: 2rem;
-      border-radius: 12px;
-      border-left: 4px solid #4299e1;
-    }
-
-    .contraceptive-title {
-      font-weight: 700;
-      color: #2d3748;
-      margin-bottom: 1rem;
-      font-size: 1.25rem;
-    }
-  `;
+  // Override to use light DOM and enable global styles
+  createRenderRoot() {
+    return this;
+  }
 
   render() {
     return html`
-      <div class="container">
-        <section class="content-section">
-          <h2 class="section-title">What is the Pharmacy Contraception service?</h2>
-          <div class="section-content">
+      <div class="service-container">
+        <section class="service-content-section">
+          <h2 class="service-section-title">What is the Pharmacy Contraception service?</h2>
+          <div class="service-section-content">
             <p>As of April 2023, the Pharmacy Contraception service enables easy and accessible contraceptive help and treatment. From December 2023, this service expanded to include the initiation of oral contraception.</p>
             <p>This change furthered the need for pharmacy help, as pharmacists play a major role in consulting, prescribing and managing patients on-going supply of oral contraception.</p>
           </div>
@@ -168,9 +21,9 @@ export class ContraceptionService extends LitElement {
           </div>
         </section>
 
-        <section class="content-section">
-          <h2 class="section-title">Who can access this service?</h2>
-          <div class="section-content">
+        <section class="service-content-section">
+          <h2 class="service-section-title">Who can access this service?</h2>
+          <div class="service-section-content">
             <p>Those who can access the Pharmacy Contraception service, are individuals who are looking to start oral contraception (OC) and are already on OC and looking for a further on-going supply.</p>
             <p>However, it is important to note that each oral contraceptive has an age limit. Therefore, this restricts the group of people eligible for this service:</p>
           </div>
@@ -188,16 +41,16 @@ export class ContraceptionService extends LitElement {
           </div>
         </section>
 
-        <section class="content-section">
-          <h2 class="section-title">What extra is available to me with the Pharmacy Contraception service?</h2>
-          <div class="section-content">
+        <section class="service-content-section">
+          <h2 class="service-section-title">What extra is available to me with the Pharmacy Contraception service?</h2>
+          <div class="service-section-content">
             <p>Prior to the change in December, individuals wishing to start oral contraception would have needed to speak to a GP or visit a sexual health clinic first. Now, the Pharmacy Contraception service allows patients to skip the GP and speak to a pharmacist to start their contraceptive journey.</p>
             <p>Not only does the Pharmacy Contraception service reduce waiting times, but it offers immediate pharmacist help!</p>
           </div>
 
-          <div class="benefits-list">
+          <div class="service-info-box">
             <h3>Service benefits:</h3>
-            <ul>
+            <ul class="service-list service-symptoms-list">
               <li>Skip GP appointments for starting contraception</li>
               <li>Immediate pharmacist consultation</li>
               <li>Reduced waiting times</li>
@@ -207,9 +60,9 @@ export class ContraceptionService extends LitElement {
           </div>
         </section>
 
-        <section class="content-section">
-          <h2 class="section-title">Will I need to pay for this service?</h2>
-          <div class="section-content">
+        <section class="service-content-section">
+          <h2 class="service-section-title">Will I need to pay for this service?</h2>
+          <div class="service-section-content">
             <p>As this is an NHS service, the combined oral contraceptive and the progesterone only pills are available free of charge. However, it is important to speak to one of our pharmacists for further details on your treatment and receive professional advice.</p>
           </div>
 
@@ -223,10 +76,10 @@ export class ContraceptionService extends LitElement {
           <p>At our pharmacies, our pharmacists can be of assistance in a variety of ways. With the patient's consent, our pharmacists can share relevant information to their GP, so details are appropriately logged into their own personal medical records.</p>
         </div>
 
-        <section class="content-section">
-          <h2 class="section-title">Pharmacist assistance includes:</h2>
-          <div class="help-list">
-            <ul>
+        <section class="service-content-section">
+          <h2 class="service-section-title">Pharmacist assistance includes:</h2>
+          <div class="service-info-box">
+            <ul class="service-list service-symptoms-list">
               <li>Identify a person who may be suitable for the service and appropriately highlight this</li>
               <li>Hold confidential consultations and assist patients with their current or on-going contraception</li>
               <li>Provide contraceptive help and treatment</li>
@@ -236,31 +89,31 @@ export class ContraceptionService extends LitElement {
           </div>
         </section>
 
-        <section class="content-section">
-          <h2 class="section-title">Where can I access this service?</h2>
-          <div class="section-content">
+        <section class="service-content-section">
+          <h2 class="service-section-title">Where can I access this service?</h2>
+          <div class="service-section-content">
             <p>You can find a pharmacy that provides this service by entering your postcode. This will give you a list of nearby pharmacies with their addresses and opening hours.</p>
             <p>You can also contact your local pharmacy for any queries or information regarding our Pharmacy Contraception service and more.</p>
-            <a href="#contact" class="cta-button">Find Your Nearest Pharmacy</a>
+            <a href="#contact" class="service-cta-button">Find Your Nearest Pharmacy</a>
           </div>
         </section>
 
-        <div class="faq-section">
-          <h2 class="section-title">Pharmacy Contraception Service FAQ's</h2>
+        <div class="service-faq-section">
+          <h2 class="service-section-title">Pharmacy Contraception Service FAQ's</h2>
           
-          <div class="faq-item">
-            <div class="faq-question">What should I do if I miss my dose?</div>
-            <div class="faq-answer">If you have missed a pill, it is best to contact your local pharmacy as you will be directed as to what steps you should take next. However, if you have only missed one pill (within a 48-hour period) the advice given would be to take the pill you missed now. It is important to note that this entirely depends on the type of contraception you are taking.</div>
+          <div class="service-faq-item">
+            <div class="service-faq-question">What should I do if I miss my dose?</div>
+            <div class="service-faq-answer">If you have missed a pill, it is best to contact your local pharmacy as you will be directed as to what steps you should take next. However, if you have only missed one pill (within a 48-hour period) the advice given would be to take the pill you missed now. It is important to note that this entirely depends on the type of contraception you are taking.</div>
           </div>
 
-          <div class="faq-item">
-            <div class="faq-question">What are the benefits of oral contraception?</div>
-            <div class="faq-answer">Oral contraception provides highly effective pregnancy prevention when taken correctly. Additional benefits may include more regular, lighter periods, reduced menstrual pain, and in some cases, improved acne. Your pharmacist can discuss the specific benefits that may apply to your chosen contraceptive.</div>
+          <div class="service-faq-item">
+            <div class="service-faq-question">What are the benefits of oral contraception?</div>
+            <div class="service-faq-answer">Oral contraception provides highly effective pregnancy prevention when taken correctly. Additional benefits may include more regular, lighter periods, reduced menstrual pain, and in some cases, improved acne. Your pharmacist can discuss the specific benefits that may apply to your chosen contraceptive.</div>
           </div>
 
-          <div class="faq-item">
-            <div class="faq-question">What are the potential side effects of taking oral contraception?</div>
-            <div class="faq-answer">Side effects vary depending on the type of contraceptive pill and individual response. Common side effects may include nausea, breast tenderness, mood changes, or breakthrough bleeding. Most side effects are mild and often resolve after the first few months. Your pharmacist will discuss potential side effects during your consultation and help you choose the most suitable option.</div>
+          <div class="service-faq-item">
+            <div class="service-faq-question">What are the potential side effects of taking oral contraception?</div>
+            <div class="service-faq-answer">Side effects vary depending on the type of contraceptive pill and individual response. Common side effects may include nausea, breast tenderness, mood changes, or breakthrough bleeding. Most side effects are mild and often resolve after the first few months. Your pharmacist will discuss potential side effects during your consultation and help you choose the most suitable option.</div>
           </div>
         </div>
       </div>
