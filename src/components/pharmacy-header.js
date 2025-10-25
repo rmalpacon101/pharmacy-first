@@ -61,16 +61,18 @@ export class PharmacyHeader extends LitElement {
             <!-- Logo -->
             <div class="flex items-center">
               <div class="flex-shrink-0">
-                <h1 class="text-2xl font-bold text-primary-600">
-                  ${this.content.pharmacy.name}
-                </h1>
+                <a href="/" class="block">
+                  <h1 class="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors cursor-pointer">
+                    ${this.content.pharmacy.name}
+                  </h1>
+                </a>
               </div>
             </div>
 
             <!-- Desktop Navigation -->
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-8">
-                <a href="#home" class="text-gray-900 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                <a href="/" class="text-gray-900 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
                 
                 <!-- Services Dropdown -->
                 <div class="relative">
@@ -124,8 +126,8 @@ export class PharmacyHeader extends LitElement {
                   ` : ''}
                 </div>
                 
-                <a href="#about" class="text-gray-900 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
-                <a href="#contact" class="text-gray-900 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                <a href="/#about" class="text-gray-900 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                <a href="/#contact" class="text-gray-900 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
                 <a href="tel:${this.content.pharmacy.contact.phone}" class="btn-primary">
                   Call Now
                 </a>
@@ -156,7 +158,7 @@ export class PharmacyHeader extends LitElement {
           ${this.mobileMenuOpen ? html`
             <div class="md:hidden">
               <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-                <a href="#home" class="text-gray-900 hover:text-primary-600 block px-3 py-2 text-base font-medium">Home</a>
+                <a href="/" class="text-gray-900 hover:text-primary-600 block px-3 py-2 text-base font-medium">Home</a>
                 
                 <!-- Mobile Services Menu -->
                 <div class="border-b pb-2 mb-2">
@@ -176,8 +178,8 @@ export class PharmacyHeader extends LitElement {
                   <a href="./emergency-contraception.html" class="text-red-600 hover:text-red-700 block px-6 py-1 text-sm font-semibold">🚨 Emergency Contraception</a>
                 </div>
                 
-                <a href="#about" class="text-gray-900 hover:text-primary-600 block px-3 py-2 text-base font-medium">About</a>
-                <a href="#contact" class="text-gray-900 hover:text-primary-600 block px-3 py-2 text-base font-medium">Contact</a>
+                <a href="/#about" class="text-gray-900 hover:text-primary-600 block px-3 py-2 text-base font-medium">About</a>
+                <a href="/#contact" class="text-gray-900 hover:text-primary-600 block px-3 py-2 text-base font-medium">Contact</a>
                 <a href="tel:${this.content.pharmacy.contact.phone}" class="btn-primary w-full mt-4">
                   Call Now
                 </a>

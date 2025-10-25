@@ -5,192 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmacy First Services - All Available Treatments</title>
     <meta name="description" content="Browse all available Pharmacy First services including earache, impetigo, infected insect bites, shingles, sinusitis, sore throat, and UTI treatments.">
+    <meta name="keywords" content="pharmacy services, NHS Pharmacy First, Loughborough, treatments, health services">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pharmacy-first-loughborough.com/services.html">
+    <meta property="og:title" content="Pharmacy First Services - All Available Treatments">
+    <meta property="og:description" content="Browse all available NHS Pharmacy First services at our Loughborough pharmacy.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pharmacy-first-loughborough.com/services.html">
+    <meta property="twitter:title" content="Pharmacy First Services - All Available Treatments">
+    <meta property="twitter:description" content="Browse all available NHS Pharmacy First services at our Loughborough pharmacy.">
+
+    <!-- Google Fonts - Maven Pro (consistent with main site) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        .header {
-            text-align: center;
-            color: white;
-            margin-bottom: 3rem;
-        }
-        
-        .header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        
-        .header p {
-            font-size: 1.25rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .service-card {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-        
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-        
-        .service-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #2d3748;
-            margin-bottom: 0.5rem;
-        }
-        
-        .service-description {
-            color: #4a5568;
-            margin-bottom: 1rem;
-        }
-        
-        .service-age {
-            background: #e6fffa;
-            color: #38b2ac;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            display: inline-block;
-        }
-        
-        .back-link {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            color: #4299e1;
-            font-weight: 600;
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-        
-        .back-link:hover {
-            background: rgba(255, 255, 255, 1);
-            transform: translateY(-2px);
-        }
-        
-        .note {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin-top: 2rem;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <a href="index.html" class="back-link">← Back to Home</a>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <div class="container">
-        <div class="header">
-            <h1>Pharmacy First Services</h1>
-            <p>Professional treatment for common conditions without visiting your GP. All services are free on the NHS and no appointment is needed.</p>
-        </div>
-        
-        <div class="services-grid">
-            <a href="earache.html" class="service-card">
-                <span class="service-icon">👂</span>
-                <h2 class="service-title">Earache</h2>
-                <p class="service-description">Treatment for ear pain and infections. Quick relief from painful ear conditions with professional pharmacist assessment.</p>
-                <span class="service-age">Ages 1-17 years</span>
-            </a>
-            
-            <a href="impetigo.html" class="service-card">
-                <span class="service-icon">🔴</span>
-                <h2 class="service-title">Impetigo</h2>
-                <p class="service-description">Treatment for this contagious skin infection that causes red sores and blisters. Fast-acting treatments available.</p>
-                <span class="service-age">Ages 1+ years</span>
-            </a>
-            
-            <a href="infected-insect-bites.html" class="service-card">
-                <span class="service-icon">🐛</span>
-                <h2 class="service-title">Infected Insect Bites</h2>
-                <p class="service-description">Treatment for infected bites from bees, wasps, mosquitos, ticks, and other insects. Prevent complications with early treatment.</p>
-                <span class="service-age">Ages 1+ years</span>
-            </a>
-            
-            <a href="shingles.html" class="service-card">
-                <span class="service-icon">⚡</span>
-                <h2 class="service-title">Shingles</h2>
-                <p class="service-description">Treatment for herpes zoster (shingles) - a painful rash that appears on one side of the body. Early treatment is crucial.</p>
-                <span class="service-age">Ages 18+ years</span>
-            </a>
-            
-            <a href="sinusitis.html" class="service-card">
-                <span class="service-icon">🤧</span>
-                <h2 class="service-title">Sinusitis</h2>
-                <p class="service-description">Treatment for sinus infections causing facial pain, blocked nose, and headaches. Get relief from sinus pressure.</p>
-                <span class="service-age">Ages 12+ years</span>
-            </a>
-            
-            <a href="sore-throat.html" class="service-card">
-                <span class="service-icon">🤒</span>
-                <h2 class="service-title">Sore Throat</h2>
-                <p class="service-description">Treatment for painful, scratchy, or dry throat conditions. Professional assessment to determine if antibiotics are needed.</p>
-                <span class="service-age">Ages 5+ years</span>
-            </a>
-            
-            <a href="uti.html" class="service-card">
-                <span class="service-icon">🚺</span>
-                <h2 class="service-title">Uncomplicated UTI (Women)</h2>
-                <p class="service-description">Treatment for uncomplicated urinary tract infections in women. Quick relief from painful urination and other UTI symptoms.</p>
-                <span class="service-age">Women 16-64 years</span>
-            </a>
-        </div>
-        
-        <div class="note">
-            <p><strong>💡 Note:</strong> All Pharmacy First services are available without appointment. Simply visit your local pharmacy during opening hours. Our qualified pharmacists will assess your condition and provide appropriate treatment or refer you to other healthcare services if needed.</p>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body class="antialiased">
+    <!-- Use consistent header -->
+    <pharmacy-header></pharmacy-header>
+    
+    <!-- Services Page Header -->
+    <div class="bg-primary-600 text-white py-12">
+        <div class="container-max section-padding text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Pharmacy First Services</h1>
+            <p class="text-xl text-primary-100 max-w-3xl mx-auto">
+                Professional treatment for common conditions without visiting your GP. 
+                All services are free on the NHS and no appointment is needed.
+            </p>
         </div>
     </div>
+    
+    <!-- Services Content -->
+    <main class="bg-gray-50 py-16">
+        <div class="container-max section-padding">
+            <!-- Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Earache Service -->
+                <a href="earache.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 group hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">👂</div>
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600">Earache</h2>
+                    <p class="text-gray-600 mb-4">Treatment for ear pain and infections. Quick relief from painful ear conditions with professional pharmacist assessment.</p>
+                    <span class="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">Ages 1-17 years</span>
+                </a>
+                
+                <!-- Impetigo Service -->
+                <a href="impetigo.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 group hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">🔴</div>
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600">Impetigo</h2>
+                    <p class="text-gray-600 mb-4">Treatment for this contagious skin infection that causes red sores and blisters. Fast-acting treatments available.</p>
+                    <span class="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">Ages 1+ years</span>
+                </a>
+                
+                <!-- Infected Insect Bites Service -->
+                <a href="infected-insect-bites.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 group hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">🐛</div>
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600">Infected Insect Bites</h2>
+                    <p class="text-gray-600 mb-4">Treatment for infected bites from bees, wasps, mosquitos, ticks, and other insects. Prevent complications with early treatment.</p>
+                    <span class="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">Ages 1+ years</span>
+                </a>
+                
+                <!-- Shingles Service -->
+                <a href="shingles.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 group hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600">Shingles</h2>
+                    <p class="text-gray-600 mb-4">Treatment for herpes zoster (shingles) - a painful rash that appears on one side of the body. Early treatment is crucial.</p>
+                    <span class="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">Ages 18+ years</span>
+                </a>
+                
+                <!-- Sinusitis Service -->
+                <a href="sinusitis.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 group hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">🤧</div>
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600">Sinusitis</h2>
+                    <p class="text-gray-600 mb-4">Treatment for sinus infections causing facial pain, blocked nose, and headaches. Get relief from sinus pressure.</p>
+                    <span class="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">Ages 12+ years</span>
+                </a>
+                
+                <!-- Sore Throat Service -->
+                <a href="sore-throat.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 group hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">🤒</div>
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600">Sore Throat</h2>
+                    <p class="text-gray-600 mb-4">Treatment for painful, scratchy, or dry throat conditions. Professional assessment to determine if antibiotics are needed.</p>
+                    <span class="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">Ages 5+ years</span>
+                </a>
+                
+                <!-- UTI Service -->
+                <a href="uti.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 group hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">🚺</div>
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600">UTI in Women</h2>
+                    <p class="text-gray-600 mb-4">Treatment for uncomplicated urinary tract infections in women. Quick relief from painful urination and other UTI symptoms.</p>
+                    <span class="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">Women 16-64 years</span>
+                </a>
+                
+                <!-- Contraception Service -->
+                <a href="contraception.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 group hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-4">💊</div>
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600">Contraception Service</h2>
+                    <p class="text-gray-600 mb-4">NHS funded contraception services including ongoing supplies and new contraceptive consultations.</p>
+                    <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">Family Planning</span>
+                </a>
+                
+                <!-- Emergency Contraception -->
+                <a href="emergency-contraception.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6 group hover:-translate-y-1 transition-transform border-2 border-red-200">
+                    <div class="text-4xl mb-4">🚨</div>
+                    <h2 class="text-xl font-bold text-red-600 mb-3">Emergency Contraception</h2>
+                    <p class="text-gray-600 mb-4">Urgent emergency contraception services. Get emergency contraceptive pills (morning after pill) within time limits.</p>
+                    <span class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium">Urgent Service</span>
+                </a>
+            </div>
+            
+            <!-- Important Note -->
+            <div class="mt-12 bg-primary-50 border border-primary-200 rounded-lg p-6">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <div class="text-2xl">💡</div>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-lg font-medium text-primary-900">Important Information</h3>
+                        <p class="mt-2 text-primary-700">
+                            All Pharmacy First services are available without appointment during our opening hours. 
+                            Our qualified pharmacists will assess your condition and provide appropriate treatment 
+                            or refer you to other healthcare services if needed. Services are free on the NHS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Use consistent footer -->
+    <pharmacy-footer></pharmacy-footer>
+
+    <script type="module">
+        import '/src/components/pharmacy-header.js';
+        import '/src/components/pharmacy-footer.js';
+    </script>
 </body>
 </html>

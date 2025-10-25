@@ -1,50 +1,96 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UTI Treatment - Pharmacy First Loughborough</title>
-    <meta name="description" content="Get professional treatment for uncomplicated urinary tract infections in women through NHS Pharmacy First service. Available for women aged 16-64 years. No appointment needed.">
+    <meta name="description" content="Get professional UTI treatment through NHS Pharmacy First service. No appointment needed at Pharmacy First Loughborough.">
+    <meta name="keywords" content="pharmacy, UTI treatment, NHS Pharmacy First, Loughborough, urinary tract infection">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pharmacy-first-loughborough.com/uti.html">
+    <meta property="og:title" content="UTI Treatment - Pharmacy First Loughborough">
+    <meta property="og:description" content="Professional UTI treatment through NHS Pharmacy First service for women aged 16-64.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pharmacy-first-loughborough.com/uti.html">
+    <meta property="twitter:title" content="UTI Treatment - Pharmacy First Loughborough">
+    <meta property="twitter:description" content="Professional UTI treatment through NHS Pharmacy First service for women aged 16-64.">
+
+    <!-- Google Fonts - Maven Pro (consistent with main site) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" src="../src/pages/services/uti.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        .back-link {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            color: #4299e1;
-            font-weight: 600;
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-        
-        .back-link:hover {
-            background: rgba(255, 255, 255, 1);
-            transform: translateY(-2px);
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/styles.css">
+    <script type="module" src="./src/pages/services/uti.js"></script>
 </head>
-<body>
-    <a href="../index.html" class="back-link">← Back to Home</a>
-    <uti-service></uti-service>
+<body class="antialiased">
+    <!-- Import and use consistent header -->
+    <service-page-header 
+        service-title="UTI Treatment" 
+        service-subtitle="NHS Pharmacy First Service • Women Ages 16-64">
+    </service-page-header>
+
+    <!-- Service Content -->
+    <main class="min-h-screen">
+        <uti-service></uti-service>
+    </main>
+
+    <!-- Import and use consistent footer -->
+    <service-page-footer></service-page-footer>
+
+    <script type="module">
+        import { LitElement, html } from 'lit';
+        import '/src/components/pharmacy-header.js';
+        import '/src/components/pharmacy-footer.js';
+
+        // Service Page Header Component
+        class ServicePageHeader extends LitElement {
+            static get properties() {
+                return {
+                    serviceTitle: { type: String, attribute: 'service-title' },
+                    serviceSubtitle: { type: String, attribute: 'service-subtitle' }
+                };
+            }
+
+            createRenderRoot() { return this; }
+            
+            render() {
+                return html`
+                    <pharmacy-header></pharmacy-header>
+                    <div class="bg-primary-600 text-white py-12 md:py-16">
+                        <div class="container-max section-padding">
+                            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                                <div>
+                                    <h1 class="text-3xl md:text-4xl font-bold mb-2">${this.serviceTitle || 'Service'}</h1>
+                                    <p class="text-primary-100 text-lg">${this.serviceSubtitle || 'NHS Pharmacy First Service'}</p>
+                                </div>
+                                <div class="mt-4 md:mt-0">
+                                    <a href="./services.html" class="btn-outline">
+                                        ← Back to Services
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Service Page Footer Component  
+        class ServicePageFooter extends LitElement {
+            createRenderRoot() { return this; }
+            
+            render() {
+                return html`<pharmacy-footer></pharmacy-footer>`;
+            }
+        }
+
+        customElements.define('service-page-header', ServicePageHeader);
+        customElements.define('service-page-footer', ServicePageFooter);
+    </script>
 </body>
 </html>
