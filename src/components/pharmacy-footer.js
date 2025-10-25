@@ -32,7 +32,7 @@ export class PharmacyFooter extends LitElement {
     return html`
       <footer class="bg-gray-900 text-white">
         <div class="container-max section-padding py-16">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Pharmacy Info -->
             <div>
               <h3 class="text-2xl font-bold mb-6">${this.content.pharmacy?.name}</h3>
@@ -68,20 +68,6 @@ export class PharmacyFooter extends LitElement {
                   <li>
                     <a href="${link.link}" class="text-gray-300 hover:text-white transition-colors">
                       ${link.text}
-                    </a>
-                  </li>
-                `)}
-              </ul>
-            </div>
-
-            <!-- Services -->
-            <div>
-              <h4 class="text-lg font-semibold mb-6">Our Services</h4>
-              <ul class="space-y-3">
-                ${this.content.footer.services?.map(service => html`
-                  <li>
-                    <a href="${service.link}" class="text-gray-300 hover:text-white transition-colors">
-                      ${service.text}
                     </a>
                   </li>
                 `)}

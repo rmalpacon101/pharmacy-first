@@ -111,16 +111,10 @@
   ],
   "footer": {
     "quickLinks": [
-      { "text": "Services", "link": "#services" },
-      { "text": "About Us", "link": "#about" },
-      { "text": "Contact", "link": "#contact" },
-      { "text": "Opening Hours", "link": "#hours" }
-    ],
-    "services": [
-      { "text": "Pharmacy First", "link": "#pharmacy-first" },
-      { "text": "Prescriptions", "link": "#prescriptions" },
-      { "text": "Health Advice", "link": "#health-advice" },
-      { "text": "Wellness Products", "link": "#wellness" }
+      { "text": "Services", "link": "/services.html" },
+      { "text": "About Us", "link": "/#about" },
+      { "text": "Contact", "link": "/#contact" },
+      { "text": "Opening Hours", "link": "/#hours" }
     ],
     "legalLinks": [
       { "text": "Privacy Policy", "link": "/privacy" },
