@@ -34,4 +34,120 @@
   .container-max {
     @apply max-w-7xl mx-auto;
   }
+
+  /* Shared Service Content Styles */
+  .service-container {
+    @apply w-full px-4 sm:px-6 lg:px-8;
+  }
+
+  .service-content-section {
+    @apply py-8 md:py-12;
+  }
+
+  .service-section-title {
+    @apply text-2xl md:text-3xl font-bold text-gray-900 mb-6;
+  }
+
+  .service-section-content {
+    @apply text-lg leading-relaxed text-gray-600 mb-8 space-y-4;
+  }
+
+  .service-info-box {
+    @apply bg-gray-50 p-6 md:p-8 rounded-xl my-8;
+  }
+
+  .service-info-box h3 {
+    @apply text-xl font-semibold text-gray-900 mb-4;
+  }
+
+  .service-list {
+    @apply space-y-3;
+  }
+
+  .service-list li {
+    @apply flex items-start space-x-3 text-gray-700;
+  }
+
+  .service-list li::before {
+    @apply flex-shrink-0 text-lg;
+    content: "🔹";
+  }
+
+  .service-symptoms-list li::before {
+    content: "🔹";
+  }
+
+  .service-treatment-list li::before {
+    content: "💊";
+  }
+
+  .service-causes-list li::before {
+    content: "⚠️";
+  }
+
+  .service-medications-list li::before {
+    content: "💉";
+  }
+
+  .pharmacy-first-info {
+    @apply bg-gradient-to-r from-blue-500 to-blue-600 text-white p-8 md:p-12 rounded-xl my-12 text-center;
+  }
+
+  .pharmacy-first-info h2 {
+    @apply text-2xl md:text-3xl font-bold mb-6;
+  }
+
+  .pharmacy-first-info p {
+    @apply text-lg leading-relaxed mb-4 opacity-95;
+  }
+
+  .age-requirement {
+    @apply bg-teal-50 border-l-4 border-teal-500 p-6 my-8 rounded-r-lg text-gray-800;
+  }
+
+  .service-cta-button {
+    @apply btn-primary mt-4 hover:-translate-y-1 transition-transform duration-200;
+  }
+
+  .service-faq-section {
+    @apply bg-gray-50 p-8 md:p-12 rounded-xl my-12;
+  }
+
+  .service-faq-section h2 {
+    @apply text-2xl md:text-3xl font-bold text-gray-900 mb-8;
+  }
+
+  .service-faq-item {
+    @apply mb-8 last:mb-0;
+  }
+
+  .service-faq-question {
+    @apply text-lg font-semibold text-gray-900 mb-3;
+  }
+
+  .service-faq-answer {
+    @apply text-gray-700 leading-relaxed;
+  }
+
+  /* Warning and Recovery Info Boxes */
+  .service-warning-note {
+    @apply bg-red-50 border-l-4 border-red-500 p-6 my-8 rounded-r-lg;
+  }
+
+  .service-warning-note p {
+    @apply text-red-800 font-medium;
+  }
+
+  .service-recovery-info {
+    @apply bg-green-50 border-l-4 border-green-500 p-6 my-8 rounded-r-lg;
+  }
+
+  .service-recovery-info p {
+    @apply text-green-800;
+  }
+
+  /* Urgent/Emergency styling for Emergency Contraception */
+  .service-urgent-badge {
+    @apply bg-red-500 bg-opacity-20 text-white px-4 py-2 rounded-full border-2 border-red-500 border-opacity-30;
+  }
 }

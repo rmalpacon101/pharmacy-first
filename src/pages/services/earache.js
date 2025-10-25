@@ -1,148 +1,30 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html } from 'lit';
 
 export class EaracheService extends LitElement {
-  static styles = css`
-    :host {
-      display: block;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    .content-section {
-      padding: 3rem 0;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #2d3748;
-      margin-bottom: 1.5rem;
-    }
-
-    .section-content {
-      font-size: 1.125rem;
-      line-height: 1.8;
-      color: #4a5568;
-      margin-bottom: 2rem;
-    }
-
-    .symptoms-list, .causes-list, .treatment-list {
-      background: #f7fafc;
-      padding: 2rem;
-      border-radius: 12px;
-      margin: 2rem 0;
-    }
-
-    .symptoms-list ul, .causes-list ul, .treatment-list ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .symptoms-list li, .causes-list li, .treatment-list li {
-      padding: 0.75rem 0;
-      padding-left: 2rem;
-      position: relative;
-    }
-
-    .symptoms-list li::before {
-      content: "🔹";
-      position: absolute;
-      left: 0;
-    }
-
-    .causes-list li::before {
-      content: "⚠️";
-      position: absolute;
-      left: 0;
-    }
-
-    .treatment-list li::before {
-      content: "💊";
-      position: absolute;
-      left: 0;
-    }
-
-    .pharmacy-first-info {
-      background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
-      color: white;
-      padding: 3rem 2rem;
-      border-radius: 12px;
-      margin: 3rem 0;
-      text-align: center;
-    }
-
-    .age-requirement {
-      background: #e6fffa;
-      border-left: 4px solid #38b2ac;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      border-radius: 0 8px 8px 0;
-      color: #2d3748;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 1rem;
-      transition: transform 0.2s;
-    }
-
-    .cta-button:hover {
-      transform: translateY(-2px);
-    }
-
-    .faq-section {
-      background: #f7fafc;
-      padding: 3rem 2rem;
-      border-radius: 12px;
-      margin: 3rem 0;
-    }
-
-    .faq-item {
-      margin-bottom: 2rem;
-    }
-
-    .faq-question {
-      font-weight: 600;
-      color: #2d3748;
-      margin-bottom: 0.5rem;
-    }
-
-    .faq-answer {
-      color: #4a5568;
-      line-height: 1.6;
-    }
-  `;
+  // Override to use light DOM and enable global styles
+  createRenderRoot() {
+    return this;
+  }
 
   render() {
     return html`
-      <div class="container">
-        <section class="content-section">
-          <h2 class="section-title">What is earache?</h2>
-          <div class="section-content">
+      <div class="service-container">
+        <section class="service-content-section">
+          <h2 class="service-section-title">What is earache?</h2>
+          <div class="service-section-content">
             <p>Earache is simply, a sharp, dull, or burning feeling that causes pain to one or both of your ears. Often, these uncomfortable symptoms are consistent, but can often come and go. However, for different age groups earache can affect them differently, particularly in babies and young children.</p>
           </div>
         </section>
 
-        <section class="content-section">
-          <h2 class="section-title">Who can get earache?</h2>
-          <div class="section-content">
+        <section class="service-content-section">
+          <h2 class="service-section-title">Who can get earache?</h2>
+          <div class="service-section-content">
             <p>Unfortunately, earache is a common ailment, and can impact anyone. However, ear pain tends to affect and be spotted differently in babies and young children, as they can experience more symptoms such as:</p>
           </div>
           
-          <div class="symptoms-list">
+          <div class="service-info-box">
             <h3>Symptoms in babies and young children:</h3>
-            <ul>
+            <ul class="service-list service-symptoms-list">
               <li>They do not react to certain sounds</li>
               <li>Losing their balance</li>
               <li>Appear irritable and restless</li>
@@ -153,15 +35,15 @@ export class EaracheService extends LitElement {
           </div>
         </section>
 
-        <section class="content-section">
-          <h2 class="section-title">Why do I have earache?</h2>
-          <div class="section-content">
+        <section class="service-content-section">
+          <h2 class="service-section-title">Why do I have earache?</h2>
+          <div class="service-section-content">
             <p>By now, you must be wondering what causes earache, or at least why does it occur? So, here is a list of five causes that often bring about earache:</p>
           </div>
 
-          <div class="causes-list">
+          <div class="service-info-box">
             <h3>Common causes of earache:</h3>
-            <ul>
+            <ul class="service-list service-causes-list">
               <li><strong>Ear infection:</strong> Outer ear infection (otherwise known as otitis externa) can cause extreme pain to the ear along with itchiness or irritation around the ear canal. This results in redness and swelling as well as pressure inside your ear.</li>
               <li><strong>Earwax build-up:</strong> Usually, earwax tends to fall out on its own however, if you start to experience hearing loss, a sensation of your ears feeling blocked, dizziness, sickness or a ringing and pain in your ear, you must speak to a pharmacist for advice.</li>
               <li><strong>Toothache:</strong> When you experience toothache, it is likely you will also experience earache. This occurs because the pain from the tooth tends to radiate to surrounding areas like the ear, potentially triggering infections.</li>
@@ -171,15 +53,15 @@ export class EaracheService extends LitElement {
           </div>
         </section>
 
-        <section class="content-section">
-          <h2 class="section-title">When does earache stop?</h2>
-          <div class="section-content">
+        <section class="service-content-section">
+          <h2 class="service-section-title">When does earache stop?</h2>
+          <div class="service-section-content">
             <p>The time it takes for earache to improve, entirely depends on its cause, but usually this tends to be within a few days. However, here are a couple of at-home remedies you can do to quicken ear pain relief:</p>
           </div>
 
-          <div class="treatment-list">
+          <div class="service-info-box">
             <h3>At-home remedies:</h3>
-            <ul>
+            <ul class="service-list service-treatment-list">
               <li>Painkillers (paracetamol and ibuprofen)</li>
               <li>A warm or cold flannel on the ear</li>
             </ul>
@@ -196,25 +78,25 @@ export class EaracheService extends LitElement {
           </div>
         </div>
 
-        <section class="content-section">
-          <h2 class="section-title">Where do I go for help?</h2>
-          <div class="section-content">
+        <section class="service-content-section">
+          <h2 class="service-section-title">Where do I go for help?</h2>
+          <div class="service-section-content">
             <p>Wherever you are, whether it be at home or the park, you can easily find your nearest pharmacy on our website by typing in your postcode. Once you have entered in your location, our map will zoom in and show our nearest pharmacy to you. There is no need to worry about booking an appointment or giving us a heads up before your visit, as with the new Pharmacy First scheme our pharmacists will be ready to assist you.</p>
-            <a href="#contact" class="cta-button">Find Your Nearest Pharmacy</a>
+            <a href="#contact" class="service-cta-button">Find Your Nearest Pharmacy</a>
           </div>
         </section>
 
-        <div class="faq-section">
-          <h2 class="section-title">Earache FAQ's</h2>
+        <div class="service-faq-section">
+          <h2>Earache FAQ's</h2>
           
-          <div class="faq-item">
-            <div class="faq-question">Why is earache common in young children?</div>
-            <div class="faq-answer">Earache can be a common problem in young children due to bacteria being able to pass from the nose to the ears more easily. If your child is feeling discomfort or pain, visit your local pharmacy and speak to a pharmacist for help.</div>
+          <div class="service-faq-item">
+            <div class="service-faq-question">Why is earache common in young children?</div>
+            <div class="service-faq-answer">Earache can be a common problem in young children due to bacteria being able to pass from the nose to the ears more easily. If your child is feeling discomfort or pain, visit your local pharmacy and speak to a pharmacist for help.</div>
           </div>
 
-          <div class="faq-item">
-            <div class="faq-question">Can I still visit a pharmacist for earache, even though I am not within the age criteria?</div>
-            <div class="faq-answer">While the Pharmacy First service for earache is specifically for ages 1-17, pharmacists can still provide general advice and over-the-counter treatments for adults. For persistent or severe symptoms in adults, we recommend consulting your GP.</div>
+          <div class="service-faq-item">
+            <div class="service-faq-question">Can I still visit a pharmacist for earache, even though I am not within the age criteria?</div>
+            <div class="service-faq-answer">While the Pharmacy First service for earache is specifically for ages 1-17, pharmacists can still provide general advice and over-the-counter treatments for adults. For persistent or severe symptoms in adults, we recommend consulting your GP.</div>
           </div>
         </div>
       </div>
