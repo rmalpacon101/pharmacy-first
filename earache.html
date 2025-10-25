@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earache Treatment - Pharmacy First Loughborough</title>
-    <meta name="description" content="Get professional treatment for earache through NHS Pharmacy First service. Available for children aged 1-17 years. No appointment needed.">
-    <meta name="keywords" content="pharmacy, earache, NHS Pharmacy First, Loughborough, children, ear pain treatment">
+    <!-- Default meta tags - will be updated by JavaScript -->
+    <title>Service - Pharmacy First Loughborough</title>
+    <meta name="description" content="NHS Pharmacy First services at Pharmacy First Loughborough">
+    <meta name="keywords" content="pharmacy, NHS Pharmacy First, Loughborough">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook - will be updated by JavaScript -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pharmacy-first-loughborough.com/earache.html">
-    <meta property="og:title" content="Earache Treatment - Pharmacy First Loughborough">
-    <meta property="og:description" content="Professional earache treatment for children aged 1-17 years through NHS Pharmacy First service.">
+    <meta property="og:url" content="https://pharmacy-first-loughborough.com/">
+    <meta property="og:title" content="Service - Pharmacy First Loughborough">
+    <meta property="og:description" content="NHS Pharmacy First services at Pharmacy First Loughborough">
     
-    <!-- Twitter -->
+    <!-- Twitter - will be updated by JavaScript -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://pharmacy-first-loughborough.com/earache.html">
-    <meta property="twitter:title" content="Earache Treatment - Pharmacy First Loughborough">
-    <meta property="twitter:description" content="Professional earache treatment for children aged 1-17 years through NHS Pharmacy First service.">
+    <meta property="twitter:url" content="https://pharmacy-first-loughborough.com/">
+    <meta property="twitter:title" content="Service - Pharmacy First Loughborough">
+    <meta property="twitter:description" content="NHS Pharmacy First services at Pharmacy First Loughborough">
 
     <!-- Google Fonts - Maven Pro (consistent with main site) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Shared styles and components -->
     <link rel="stylesheet" href="/src/styles.css">
-    <script type="module" src="./src/pages/services/earache.js"></script>
     <script type="module" src="./src/components/service-page-header.js"></script>
     <script type="module" src="./src/components/service-page-footer.js"></script>
+    <!-- Service-specific script -->
+    <script type="module" src="./src/pages/services/earache.js"></script>
 </head>
 <body class="antialiased">
-    <!-- Import and use consistent header -->
-    <service-page-header service-title="Earache Treatment" service-subtitle="NHS Pharmacy First Service • Ages 1-17"></service-page-header>
+    <!-- Header with service info - service-name attribute will auto-populate from config -->
+    <service-page-header service-name="earache"></service-page-header>
 
     <!-- Service Content -->
     <main class="min-h-screen">
         <earache-service></earache-service>
     </main>
 
-    <!-- Import and use consistent footer -->
+    <!-- Footer -->
     <service-page-footer></service-page-footer>
 </body>
 </html>

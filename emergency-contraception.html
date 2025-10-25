@@ -3,46 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Contraception - Pharmacy First Loughborough</title>
-    <meta name="description" content="Urgent emergency contraception services at Pharmacy First. Get emergency contraceptive pills (morning after pill) from qualified pharmacists within time limits.">
-    <meta name="keywords" content="emergency contraception, morning after pill, pharmacy, NHS Pharmacy First, Loughborough, urgent">
+    <!-- Default meta tags - will be updated by JavaScript -->
+    <title>Service - Pharmacy First Loughborough</title>
+    <meta name="description" content="NHS Pharmacy First services at Pharmacy First Loughborough">
+    <meta name="keywords" content="pharmacy, NHS Pharmacy First, Loughborough">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook - will be updated by JavaScript -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pharmacy-first-loughborough.com/emergency-contraception.html">
-    <meta property="og:title" content="Emergency Contraception - Pharmacy First Loughborough">
-    <meta property="og:description" content="Urgent emergency contraception services. Get the morning after pill from qualified pharmacists.">
+    <meta property="og:url" content="https://pharmacy-first-loughborough.com/">
+    <meta property="og:title" content="Service - Pharmacy First Loughborough">
+    <meta property="og:description" content="NHS Pharmacy First services at Pharmacy First Loughborough">
     
-    <!-- Twitter -->
+    <!-- Twitter - will be updated by JavaScript -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://pharmacy-first-loughborough.com/emergency-contraception.html">
-    <meta property="twitter:title" content="Emergency Contraception - Pharmacy First Loughborough">
-    <meta property="twitter:description" content="Urgent emergency contraception services. Get the morning after pill from qualified pharmacists.">
+    <meta property="twitter:url" content="https://pharmacy-first-loughborough.com/">
+    <meta property="twitter:title" content="Service - Pharmacy First Loughborough">
+    <meta property="twitter:description" content="NHS Pharmacy First services at Pharmacy First Loughborough">
 
     <!-- Google Fonts - Maven Pro (consistent with main site) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Shared styles and components -->
     <link rel="stylesheet" href="/src/styles.css">
-    <script type="module" src="./src/pages/services/emergency-contraception.js"></script>
     <script type="module" src="./src/components/service-page-header.js"></script>
     <script type="module" src="./src/components/service-page-footer.js"></script>
+    <!-- Service-specific script -->
+    <script type="module" src="./src/pages/services/emergency-contraception.js"></script>
 </head>
 <body class="antialiased">
-    <!-- Import and use consistent header -->
-    <service-page-header 
-        service-title="Emergency Contraception" 
-        service-subtitle="Urgent Service • Available Now"
-        is-urgent="true">
-    </service-page-header>
+    <!-- Header with service info - service-name attribute will auto-populate from config -->
+    <service-page-header service-name="emergency-contraception"></service-page-header>
 
     <!-- Service Content -->
     <main class="min-h-screen">
         <emergency-contraception-service></emergency-contraception-service>
     </main>
 
-    <!-- Import and use consistent footer -->
+    <!-- Footer -->
     <service-page-footer></service-page-footer>
 </body>
 </html>

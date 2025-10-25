@@ -8,3 +8,7 @@ export { PharmacyContact } from './pharmacy-contact.js';
 export { PharmacyFooter } from './pharmacy-footer.js';
 export { ServicePageHeader } from './service-page-header.js';
 export { ServicePageFooter } from './service-page-footer.js';
+
+// Export utilities
+export { ServiceMetaHelper } from '../utils/service-meta-helper.js';
+export { servicesMeta } from '../config/services.js';

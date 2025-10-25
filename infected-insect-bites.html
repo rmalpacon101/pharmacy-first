@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infected Insect Bites - Pharmacy First Loughborough</title>
-    <meta name="description" content="Get professional infected insect bites treatment through NHS Pharmacy First service. No appointment needed at Pharmacy First Loughborough.">
-    <meta name="keywords" content="pharmacy, infected insect bites, NHS Pharmacy First, Loughborough, treatment">
+    <!-- Default meta tags - will be updated by JavaScript -->
+    <title>Service - Pharmacy First Loughborough</title>
+    <meta name="description" content="NHS Pharmacy First services at Pharmacy First Loughborough">
+    <meta name="keywords" content="pharmacy, NHS Pharmacy First, Loughborough">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook - will be updated by JavaScript -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pharmacy-first-loughborough.com/infected-insect-bites.html">
-    <meta property="og:title" content="Infected Insect Bites - Pharmacy First Loughborough">
-    <meta property="og:description" content="Professional infected insect bites treatment through NHS Pharmacy First service.">
+    <meta property="og:url" content="https://pharmacy-first-loughborough.com/">
+    <meta property="og:title" content="Service - Pharmacy First Loughborough">
+    <meta property="og:description" content="NHS Pharmacy First services at Pharmacy First Loughborough">
     
-    <!-- Twitter -->
+    <!-- Twitter - will be updated by JavaScript -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://pharmacy-first-loughborough.com/infected-insect-bites.html">
-    <meta property="twitter:title" content="Infected Insect Bites - Pharmacy First Loughborough">
-    <meta property="twitter:description" content="Professional infected insect bites treatment through NHS Pharmacy First service.">
+    <meta property="twitter:url" content="https://pharmacy-first-loughborough.com/">
+    <meta property="twitter:title" content="Service - Pharmacy First Loughborough">
+    <meta property="twitter:description" content="NHS Pharmacy First services at Pharmacy First Loughborough">
 
     <!-- Google Fonts - Maven Pro (consistent with main site) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Shared styles and components -->
     <link rel="stylesheet" href="/src/styles.css">
-    <script type="module" src="./src/pages/services/infected-insect-bites.js"></script>
     <script type="module" src="./src/components/service-page-header.js"></script>
     <script type="module" src="./src/components/service-page-footer.js"></script>
+    <!-- Service-specific script -->
+    <script type="module" src="./src/pages/services/infected-insect-bites.js"></script>
 </head>
 <body class="antialiased">
-    <!-- Import and use consistent header -->
-    <service-page-header 
-        service-title="Infected Insect Bites" 
-        service-subtitle="NHS Pharmacy First Service • Ages 1+">
-    </service-page-header>
+    <!-- Header with service info - service-name attribute will auto-populate from config -->
+    <service-page-header service-name="infected-insect-bites"></service-page-header>
 
     <!-- Service Content -->
     <main class="min-h-screen">
         <infected-insect-bites-service></infected-insect-bites-service>
     </main>
 
-    <!-- Import and use consistent footer -->
+    <!-- Footer -->
     <service-page-footer></service-page-footer>
 </body>
 </html>
