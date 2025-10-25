@@ -26,6 +26,8 @@
     
     <link rel="stylesheet" href="/src/styles.css">
     <script type="module" src="./src/pages/services/contraception.js"></script>
+    <script type="module" src="./src/components/service-page-header.js"></script>
+    <script type="module" src="./src/components/service-page-footer.js"></script>
 </head>
 <body class="antialiased">
     <!-- Import and use consistent header -->
@@ -38,49 +40,5 @@
 
     <!-- Import and use consistent footer -->
     <service-page-footer></service-page-footer>
-
-    <script type="module">
-        import { LitElement, html } from 'lit';
-        import '/src/components/pharmacy-header.js';
-        import '/src/components/pharmacy-footer.js';
-
-        // Service Page Header Component
-        class ServicePageHeader extends LitElement {
-            createRenderRoot() { return this; }
-            
-            render() {
-                return html`
-                    <pharmacy-header></pharmacy-header>
-                    <div class="bg-primary-600 text-white py-12 md:py-16">
-                        <div class="container-max section-padding">
-                            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
-                                <div>
-                                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Contraception Service</h1>
-                                    <p class="text-primary-100 text-lg">NHS Pharmacy First Service</p>
-                                </div>
-                                <div class="mt-4 md:mt-0">
-                                    <a href="./services.html" class="btn-outline">
-                                        ← Back to Services
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-        }
-
-        // Service Page Footer Component  
-        class ServicePageFooter extends LitElement {
-            createRenderRoot() { return this; }
-            
-            render() {
-                return html`<pharmacy-footer></pharmacy-footer>`;
-            }
-        }
-
-        customElements.define('service-page-header', ServicePageHeader);
-        customElements.define('service-page-footer', ServicePageFooter);
-    </script>
 </body>
 </html>
