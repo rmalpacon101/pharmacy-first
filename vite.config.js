@@ -26,5 +26,5 @@ export default defineConfig({
       }
     }
   },
-  publicDir: 'public' // Copy public folder contents to dist
+  publicDir: 'public'
 })
