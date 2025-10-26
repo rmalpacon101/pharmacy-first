@@ -26,6 +26,12 @@ export class PharmacyContact extends LitElement {
     }
   }
 
+  openMapInNewTab() {
+    // Use the correct Google Maps link provided
+    const mapsUrl = 'https://maps.app.goo.gl/q9ym9sZ635UTov9b7';
+    window.open(mapsUrl, '_blank');
+  }
+
   render() {
     if (!this.content.pharmacy) return html``;
 
@@ -92,7 +98,7 @@ export class PharmacyContact extends LitElement {
                       ${this.content.pharmacy.address.city}<br>
                       ${this.content.pharmacy.address.postcode}
                     </p>
-                    <a href="https://maps.google.com/?q=${encodeURIComponent(`${this.content.pharmacy.address.street}, ${this.content.pharmacy.address.city}, ${this.content.pharmacy.address.postcode}`)}" 
+                    <a href="https://maps.app.goo.gl/q9ym9sZ635UTov9b7" 
                        target="_blank" 
                        class="text-primary-600 hover:text-primary-700 font-medium">
                       Get directions
@@ -128,17 +134,29 @@ export class PharmacyContact extends LitElement {
               <h3 class="text-2xl font-bold text-gray-900 mb-8">Visit Us</h3>
               
               <!-- Google Maps Embed -->
-              <div class="rounded-xl overflow-hidden mb-8 shadow-lg">
+              <div class="rounded-xl overflow-hidden mb-8 shadow-lg relative cursor-pointer group" 
+                   @click="${this.openMapInNewTab}">
                 <iframe 
-                  src="https://maps.google.com/maps?q=31+Bridge+Street,+Loughborough+LE11+1NH,+UK&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2422.7691995947847!2d-1.2037866!3d52.7676841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48776238b0c7b0a7%3A0x9f8b6b8b8b8b8b8b!2s31%20Bridge%20St%2C%20Loughborough%20LE11%201NH%2C%20UK!5e0!3m2!1sen!2sus!4v1635789123456!5m2!1sen!2sus&gestureHandling=none&zoomControl=false&scrollwheel=false&disableDoubleClickZoom=true"
                   width="100%" 
                   height="300" 
-                  style="border:0;" 
+                  style="border:0; pointer-events: none;" 
                   allowfullscreen="" 
                   loading="lazy" 
                   referrerpolicy="no-referrer-when-downgrade"
                   title="Pharmacy First Location - 31 Bridge Street, Loughborough">
                 </iframe>
+                <!-- Click overlay for opening map -->
+                <div class="absolute inset-0 bg-transparent group-hover:bg-black group-hover:bg-opacity-10 transition-all duration-200 flex items-center justify-center">
+                  <div class="bg-white bg-opacity-90 px-4 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <span class="text-sm font-medium text-gray-900 flex items-center">
+                      <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 000 1.5h4.59l-2.1 2.1a.75.75 0 101.06 1.06l3.5-3.5a.75.75 0 000-1.06l-3.5-3.5a.75.75 0 10-1.06 1.06l2.1 2.1H6.75z" clip-rule="evenodd" />
+                      </svg>
+                      View larger map
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <!-- Quick Contact -->
